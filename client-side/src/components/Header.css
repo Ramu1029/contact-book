@@ -1,0 +1,94 @@
+.nav-container {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b8b2b2;
+}
+
+@media (max-width: 576px) {
+  .nav-container {
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.app-icon {
+  height: 26px;
+  width: 26px;
+}
+.app-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #2a324b;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+@media (max-width: 576px) {
+  .app-icon {
+    height: 24px;
+    width: 24px;
+  }
+  .app-name {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .app-icon {
+    height: 30px;
+    width: 30px;
+  }
+  .app-name {
+    font-size: 21px;
+  }
+}
+
+.add-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background: #4c68e6;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  height: 35px;
+  width: 70px;
+}
+
+@media (max-width: 576px) {
+  .add-btn {
+    height: 32px;
+    width: 65px;
+  }
+}
+
+@media (min-width: 768px) {
+  .add-btn {
+    width: 100px;
+  }
+}

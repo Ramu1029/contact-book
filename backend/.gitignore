@@ -1,0 +1,11 @@
+# node dependency directory
+node_modules/
+
+# dotenv environment settings
+.env
+
+# logs
+*.log
+
+# OS files
+.DS_Store

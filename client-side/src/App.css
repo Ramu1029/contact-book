@@ -1,0 +1,23 @@
+.app-container {
+  background-color: #edf4f6;
+  padding-bottom: 30px;
+}
+.search-input {
+  width: 40%;
+}
+@media (max-width: 576px) {
+  .search-input {
+    width: 70%;
+  }
+}
+.contact-book-body {
+  height: 100vh;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+@media (max-width: 576px) {
+  .contact-book-body {
+    padding: 20px;
+  }
+}
