@@ -24,7 +24,7 @@ function App() {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:5000/contacts?page=${page}&limit=${limit}`
+        `https://contact-book-production-b6ca.up.railway.app/contacts?page=${page}&limit=${limit}`
       );
 
       setContacts(response.data.contacts || []);
@@ -44,7 +44,7 @@ function App() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/contacts/${id}`);
+      await axios.delete(`https://contact-book-production-b6ca.up.railway.app/contacts/${id}`);
       fetchContacts(currentPage);
     } catch (err) {
       console.error("Error deleting contact:", err);
@@ -70,7 +70,7 @@ function App() {
 
   const handleAddSubmit = async (newContact) => {
     try {
-      await axios.post(`http://localhost:5000/contacts`, newContact);
+      await axios.post(`https://contact-book-production-b6ca.up.railway.app/contacts`, newContact);
       fetchContacts(currentPage);
       setShowAddModal(false);
     } catch (err) {

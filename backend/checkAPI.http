@@ -1,6 +1,6 @@
 ### create a contact
 
-POST http://localhost:5000/contacts
+POST https://contact-book-production-b6ca.up.railway.app/contacts
 Content-Type: application/json
 
 {
@@ -9,10 +9,10 @@ Content-Type: application/json
     "phone": "9078563214"
   }
 ### get all contacts
-GET http://localhost:5000/contacts?page=1&limit=5
+GET https://contact-book-production-b6ca.up.railway.app/contacts?page=1&limit=5
 
 ### update contact
-PATCH http://localhost:5000/contacts/4
+PATCH https://contact-book-production-b6ca.up.railway.app/contacts/4
 Content-Type: application/json
 
 {

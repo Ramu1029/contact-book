@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 
-const PORT = process.env.PORT || 5000;
 
 const EditContactModal = ({ show, onClose, contact, onUpdate }) => {
   const [name, setName] = useState("");
@@ -29,7 +28,7 @@ const EditContactModal = ({ show, onClose, contact, onUpdate }) => {
 
     try {
       const response = await fetch(
-        `http://localhost:${PORT}/contacts/${contact.id}`,
+        `https://contact-book-production-b6ca.up.railway.app/contacts/${contact.id}`,
         {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
